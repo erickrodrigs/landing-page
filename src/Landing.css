@@ -21,39 +21,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: baseline;
-  justify-items: center;
-}
-
-.p-2 {
-  padding: 2rem;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
 .bg-gray {
   background-color: #F8F8F8;
 }

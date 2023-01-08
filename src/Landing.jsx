@@ -10,6 +10,7 @@ import descontracaoImg from "./assets/descontracao.png";
 import atividadesImg from "./assets/atividades.png";
 import bottomImg from "./assets/foto-bottom.png";
 import "./Landing.css";
+import "./shared.css";
 
 function Landing() {
   return (
