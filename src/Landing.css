@@ -77,26 +77,6 @@ h3 {
   background-color: #F8F8F8;
 }
 
-header {
-  position: relative;
-}
-
-header img {
-  width: 100vw;
-}
-
-header .title-container {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-}
-
-header .title-container h1 {
-  color: #fff;
-  text-shadow: 1px 1px 3px #212121;
-}
-
 em {
   color: #EBB93E;
   font-weight: 600;

@@ -1,4 +1,4 @@
-import headerImg from "./assets/foto-header.png";
+import Header from "./components/Header";
 import placeholderVideoImg from "./assets/placeholder-video.png";
 import beatrizImg from "./assets/beatriz.png";
 import camilaImg from "./assets/camila.png";
@@ -13,12 +13,7 @@ import "./Landing.css";
 function Landing() {
   return (
     <>
-      <header>
-        <img src={headerImg} alt="Palavras do CEO" />
-        <div className="title-container">
-          <h1>Trabalhe no Elo7</h1>
-        </div>
-      </header>
+      <Header />
 
       <main>
         <div className="flex-container p-2">
