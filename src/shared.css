@@ -17,6 +17,7 @@
   grid-template-columns: 1fr;
   align-items: baseline;
   justify-items: center;
+  row-gap: 1rem;
 }
 
 .p-2 {

@@ -1,11 +1,7 @@
 import Header from "./components/Header";
 import LandingDescription from "./components/LandingDescription";
+import Elo7Team from "./components/Elo7Team";
 import Link from "./components/Link";
-import placeholderVideoImg from "./assets/placeholder-video.png";
-import beatrizImg from "./assets/beatriz.png";
-import camilaImg from "./assets/camila.png";
-import davidImg from "./assets/david.png";
-import gutoImg from "./assets/guto.png";
 import qualidadeImg from "./assets/qualidade.png";
 import descontracaoImg from "./assets/descontracao.png";
 import atividadesImg from "./assets/atividades.png";
@@ -20,40 +16,7 @@ function Landing() {
 
       <main>
         <LandingDescription />
-
-        <section id="elo7-team" className="flex-container p-2 bg-gray">
-          <div id="elo7-ceo" className="flex-container">
-            <img
-              className="w-100"
-              src={placeholderVideoImg}
-              alt="Palavras do CEO"
-            />
-            <article>
-              <h2>Palavra do CEO</h2>
-              <em>Carlos Curioni</em>
-              <p className="text-justify mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                ut efficitur ipsum risus gravida ex, at malesuada ligula.
-                Pellentesque odio ipsum, viverra a eros sit amet, fringilla
-                sagittis augue. Fusce risus tellus, tempus quis lacinia in,
-                vehicula ut turpis.
-              </p>
-            </article>
-          </div>
-          <article id="elo7-employees" className="flex-container w-100">
-            <h2 className="mt-2 text-center">
-              Conheça nosso time
-              <br />
-              fora de série
-            </h2>
-            <div className="grid-container w-100 mt-2">
-              <img src={camilaImg} alt="Camila" />
-              <img src={gutoImg} alt="Guto" />
-              <img src={davidImg} alt="David" />
-              <img src={beatrizImg} alt="Beatriz" />
-            </div>
-          </article>
-        </section>
+        <Elo7Team />
 
         <section id="elo7-benefits" className="flex-container p-2">
           <div className="grid-container w-100">
