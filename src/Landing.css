@@ -21,25 +21,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-.link {
-  margin-top: 1rem;
-  background: transparent;
-  text-decoration: none;
-  border: none;
-  border-top: 1px solid;
-  border-color: #ccc;
-  padding: 1rem 1rem 0 1rem;
-  outline: none;
-  text-transform: uppercase;
-  color: #089F9F;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.link::after {
-  content: " »";
-}
-
 .text-center {
   text-align: center;
 }

@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Link from "./components/Link";
 import placeholderVideoImg from "./assets/placeholder-video.png";
 import beatrizImg from "./assets/beatriz.png";
 import camilaImg from "./assets/camila.png";
@@ -23,9 +24,7 @@ function Landing() {
             a eros sit amet, fringilla sagittis augue. Fusce risus tellus,
             tempus quis lacinia in, vehicula ut turpis.
           </p>
-          <a className="link" href="#elo7-jobs">
-            Vagas em aberto
-          </a>
+          <Link href={"#elo7-jobs"}>Vagas em aberto</Link>
         </div>
 
         <section id="elo7-team" className="flex-container p-2 bg-gray">
@@ -110,9 +109,8 @@ function Landing() {
               </p>
             </article>
           </div>
-          <a href="https://www.elo7.com.br/" className="link">
-            Saiba mais
-          </a>
+
+          <Link href={"https://www.elo7.com.br/"}>Saiba mais</Link>
 
           <img className="w-100 mt-2" src={bottomImg} alt="Elo7" />
         </section>
