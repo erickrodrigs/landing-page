@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import LandingDescription from "./components/LandingDescription";
 import Link from "./components/Link";
 import placeholderVideoImg from "./assets/placeholder-video.png";
 import beatrizImg from "./assets/beatriz.png";
@@ -18,15 +19,7 @@ function Landing() {
       <Header />
 
       <main>
-        <div className="flex-container p-2">
-          <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
-            efficitur ex, at malesuada ligula. Pellentesque odio ipsum, viverra
-            a eros sit amet, fringilla sagittis augue. Fusce risus tellus,
-            tempus quis lacinia in, vehicula ut turpis.
-          </p>
-          <Link href={"#elo7-jobs"}>Vagas em aberto</Link>
-        </div>
+        <LandingDescription />
 
         <section id="elo7-team" className="flex-container p-2 bg-gray">
           <div id="elo7-ceo" className="flex-container">
