@@ -1,0 +1,13 @@
+.benefit {
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.benefit img {
+  margin: 0 0 1rem 0;
+  max-width: 150px;
+}
+
+.benefit p {
+  margin-top: 2rem;
+}
