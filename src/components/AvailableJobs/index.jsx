@@ -1,24 +1,6 @@
 import Job from "../Job";
 
-function AvailableJobs() {
-  const jobs = [
-    {
-      role: "Desenvolvedor Mobile Senior (Android e IOS)",
-      link: "https://www.elo7.com.br/",
-      location: "Vila Olímpia - São Paulo, Brasil",
-    },
-    {
-      role: "Desenvolvedor Java Senior",
-      link: "https://www.elo7.com.br/",
-      location: "Vila Olímpia - São Paulo, Brasil",
-    },
-    {
-      role: "Desenvolvedor Front-End",
-      link: "https://www.elo7.com.br/",
-      location: "Vila Olímpia - São Paulo, Brasil",
-    },
-  ];
-
+function AvailableJobs({ jobs }) {
   return (
     <section id="elo7-jobs" className="flex-container p-2">
       <h2>Vagas em aberto</h2>
