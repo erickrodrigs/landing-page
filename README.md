@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Elo7 careers landing page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Elo7 careers page created for the Front-End Software Engineer position at Elo7. The purpose of this project is to apply web development skills with HTML5, CSS and Javascript.
 
-## Available Scripts
+## Technologies stack
 
-In the project directory, you can run:
+This project uses HTML5, CSS, Javascript, React.js and Jest.
 
-### `npm start`
+## How to execute
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+There are two ways to execute the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1) Using docker-compose:
+```
+docker-compose up
+```
 
-### `npm test`
+2) Locally (node.js and npm need to be installed first):
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the tests, you can use either `docker-compose run --rm web npm run test` or `npm run test`.
 
-### `npm run build`
+## Landing page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Landing page](docs/vagas.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Components architecture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Based on the landing page, the page components were defined as follows:
 
-### `npm run eject`
+![Components architecture](docs/components.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Folder structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `public/`: public files such as favicon.ico and index.html.
+- `src/`:
+  - `assets/`: it contains the images.
+  - `components/`: it contains the components used in the app.
+  - `pages/`: it contains the components that represent a page in the app (in our case, we have only one page).
+  - `services/`: it contains the logic of the app, such as fetching and parsing available jobs that will be rendered.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Each component in the app has its own `index.jsx` and `style.css` files. Some components also have a `hook.js` file, which is intended to separate the component's HTML structure from its logic.
