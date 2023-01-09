@@ -21,28 +21,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-.job-container {
-  margin: 2rem 0;
-}
-
-.job-role {
-  color: #089F9F;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  .job-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   p, a, em {
     font-size: 1.2rem;
