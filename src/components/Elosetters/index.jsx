@@ -1,16 +1,8 @@
-import camilaImg from "../../assets/camila.png";
-import gutoImg from "../../assets/guto.png";
-import davidImg from "../../assets/david.png";
-import beatrizImg from "../../assets/beatriz.png";
+import { useElosetters } from "./hook";
 import "./style.css";
 
 function Elosetters() {
-  const elosetters = [
-    { name: "Camila", photo: camilaImg },
-    { name: "Guto", photo: gutoImg },
-    { name: "David", photo: davidImg },
-    { name: "Beatriz", photo: beatrizImg },
-  ];
+  const { elosetters } = useElosetters();
 
   return (
     <article id="elosetters" className="flex-container w-100">

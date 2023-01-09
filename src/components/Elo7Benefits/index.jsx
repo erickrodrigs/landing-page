@@ -1,32 +1,11 @@
 import Benefit from "../Benefit";
 import Link from "../Link";
-import qualidadeImg from "../../assets/qualidade.png";
-import descontracaoImg from "../../assets/descontracao.png";
-import atividadesImg from "../../assets/atividades.png";
 import bottomImg from "../../assets/foto-bottom.png";
 import "./style.css";
+import { useBenefits } from "./hook";
 
 function Elo7Benefits() {
-  const benefits = [
-    {
-      name: "Qualidade de vida",
-      picture: qualidadeImg,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ipsum risus gravida ex, at malesuada ligula. Pellentesque odio ipsum,",
-    },
-    {
-      name: "Ambiente descontraído",
-      picture: descontracaoImg,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ipsum risus gravida ex, at malesuada ligula. Pellentesque odio ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus tellus, tempus quis lacinia in, vehicula ut turpis.",
-    },
-    {
-      name: "Atividades extras",
-      picture: atividadesImg,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut efficitur ipsum risus gravida ex, at malesuada ligula. Pellentesque odio ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus tellus,",
-    },
-  ];
+  const { benefits } = useBenefits();
 
   return (
     <section id="elo7-benefits" className="flex-container p-2">
