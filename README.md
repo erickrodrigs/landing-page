@@ -11,16 +11,29 @@ This project uses HTML5, CSS, Javascript, React.js and Jest.
 There are two ways to execute the application.
 
 1) Using docker-compose:
-```
-docker-compose up
+```sh
+docker-compose build # to build app image (only when running for the first time)
+docker-compose run --rm web npm install # to install dependencies locally (only when running for the first time)
+docker-compose up # to run app
 ```
 
 2) Locally (node.js and npm need to be installed first):
-```
-npm start
+```sh
+npm install # to install dependencies (only when running for the first time)
+npm start # to run app
 ```
 
-To run the tests, you can use either `docker-compose run --rm web npm run test` or `npm run test`.
+To run the tests, you can use either of the options below:
+
+1) Using docker-compose:
+```sh
+docker-compose run --rm web npm run test
+```
+
+2) Locally:
+```sh
+npm run test
+```
 
 ## Landing page
 
@@ -41,4 +54,4 @@ Based on the landing page, the page components were defined as follows:
   - `pages/`: it contains the components that represent a page in the app (in our case, we have only one page).
   - `services/`: it contains the logic of the app, such as fetching and parsing available jobs that will be rendered.
 
-Each component in the app has its own `index.jsx` and `style.css` files. Some components also have a `hook.js` file, which is intended to separate the component's HTML structure from its logic.
+Each component in the app has its own `index.jsx` and `styles.module.css` files. Some components also have a `hook.js` file, which is intended to separate the component's HTML structure from its logic.
