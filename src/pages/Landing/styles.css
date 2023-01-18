@@ -21,6 +21,10 @@ h3 {
   font-size: 0.9rem;
 }
 
+section {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   p, a, em {
     font-size: 1.2rem;

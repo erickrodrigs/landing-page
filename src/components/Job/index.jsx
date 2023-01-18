@@ -1,9 +1,9 @@
-import "./style.css";
+import styles from "./styles.module.css";
 
 function Job({ role, link, location }) {
   return (
-    <div className="job-container">
-      <a href={link} className="job-role" data-testid="job">
+    <div className={styles.jobContainer}>
+      <a href={link} className={styles.jobRole} data-testid="job">
         {role}
       </a>
       <p>{location}</p>

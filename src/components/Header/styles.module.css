@@ -6,14 +6,14 @@
   width: 100vw;
 }
 
-.title-container {
+.titleContainer {
   position: absolute;
   top: 50%;
   width: 100%;
   text-align: center;
 }
 
-.title-container h1 {
+.titleContainer h1 {
   color: #fff;
   text-shadow: 1px 1px 3px #212121;
 }

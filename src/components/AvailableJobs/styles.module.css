@@ -1,0 +1,11 @@
+.availableJobsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.availableJobsContainer > article {
+  width: inherit;
+  margin-top: 2rem;
+}

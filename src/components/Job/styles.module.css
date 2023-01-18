@@ -1,15 +1,15 @@
-.job-container {
+.jobContainer {
   margin: 2rem 0;
 }
 
-.job-role {
+.jobRole {
   color: #089F9F;
   font-weight: 700;
   text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
-  .job-container {
+  .jobContainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;

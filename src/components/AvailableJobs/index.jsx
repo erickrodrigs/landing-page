@@ -1,11 +1,12 @@
 import Job from "../Job";
+import styles from "./styles.module.css";
 
 function AvailableJobs({ jobs }) {
   return (
-    <section id="elo7-jobs" className="flex-container p-2">
+    <section id="elo7-jobs" className={styles.availableJobsContainer}>
       <h2>Vagas em aberto</h2>
-      <article className="w-100">
-        <h3 className="mt-2">Desenvolvimento</h3>
+      <article>
+        <h3>Desenvolvimento</h3>
         {jobs.map(({ role, link, location }) => (
           <Job key={role} role={role} link={link} location={location} />
         ))}

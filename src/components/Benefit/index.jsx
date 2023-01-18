@@ -1,12 +1,12 @@
-import "./style.css";
+import styles from "./styles.module.css";
 
 function Benefit({ picture, name, description }) {
   return (
-    <article className="benefit text-center">
-      <img className="w-100" src={picture} alt={name} />
+    <article className={styles.benefit}>
+      <img src={picture} alt={name} />
 
       <h2>{name}</h2>
-      <p className="text-justify">{description}</p>
+      <p>{description}</p>
     </article>
   );
 }

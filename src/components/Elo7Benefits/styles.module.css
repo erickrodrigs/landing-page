@@ -1,0 +1,27 @@
+.benefitsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.benefitsContainer > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: baseline;
+  justify-items: center;
+  row-gap: 1rem;
+  width: inherit;
+}
+
+.benefitsContainer > img {
+  margin-top: 2rem;
+  width: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .benefitsContainer > div {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}

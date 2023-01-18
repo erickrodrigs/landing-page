@@ -1,17 +1,17 @@
 import { useElosetters } from "./hook";
-import "./style.css";
+import styles from "./styles.module.css";
 
 function Elosetters() {
   const { elosetters } = useElosetters();
 
   return (
-    <article id="elosetters" className="flex-container w-100">
-      <h2 className="mt-2 text-center">
+    <article className={styles.elosettersContainer}>
+      <h2>
         Conheça nosso time
         <br />
         fora de série
       </h2>
-      <div className="grid-container w-100 mt-2">
+      <div>
         {elosetters.map(({ name, photo }) => (
           <img key={name} src={photo} alt={name} />
         ))}

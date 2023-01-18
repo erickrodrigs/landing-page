@@ -1,15 +1,15 @@
 import Benefit from "../Benefit";
 import Link from "../Link";
 import bottomImg from "../../assets/foto-bottom.png";
-import "./style.css";
 import { useBenefits } from "./hook";
+import styles from "./styles.module.css";
 
 function Elo7Benefits() {
   const { benefits } = useBenefits();
 
   return (
-    <section id="elo7-benefits" className="flex-container p-2">
-      <div className="grid-container w-100">
+    <section className={styles.benefitsContainer}>
+      <div>
         {benefits.map(({ name, picture, description }) => (
           <Benefit
             key={name}
@@ -22,7 +22,7 @@ function Elo7Benefits() {
 
       <Link href={"https://www.elo7.com.br/"}>Saiba mais</Link>
 
-      <img className="w-100 mt-2" src={bottomImg} alt="Elo7" />
+      <img src={bottomImg} alt="Elo7" />
     </section>
   );
 }

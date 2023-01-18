@@ -1,10 +1,10 @@
 import Elo7Ceo from "../Elo7Ceo";
 import Elosetters from "../Elosetters";
-import "./style.css";
+import styles from "./styles.module.css";
 
 function Elo7Team() {
   return (
-    <section className="flex-container p-2 bg-gray">
+    <section className={styles.elo7team}>
       <Elo7Ceo />
       <Elosetters />
     </section>

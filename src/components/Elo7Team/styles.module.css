@@ -1,0 +1,7 @@
+.elo7team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #F8F8F8;
+}
