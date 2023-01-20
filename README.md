@@ -8,6 +8,8 @@ This project uses HTML5, CSS, Javascript, React.js and Jest.
 
 ## How to execute
 
+The application is deployed at https://elo7-careers.vercel.app/.
+
 There are two ways to execute the application.
 
 1) Using docker-compose:
