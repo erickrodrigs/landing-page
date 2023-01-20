@@ -9,7 +9,7 @@ function Elo7Benefits() {
 
   return (
     <section className={styles.benefitsContainer}>
-      <div>
+      <div className={styles.mainBenefitsWrapper}>
         {benefits.map(({ name, picture, description }) => (
           <Benefit
             key={name}
@@ -22,7 +22,7 @@ function Elo7Benefits() {
 
       <Link href={"https://www.elo7.com.br/"}>Saiba mais</Link>
 
-      <img src={bottomImg} alt="Elo7" />
+      <img className={styles.bottomImg} src={bottomImg} alt="Elo7" />
     </section>
   );
 }
