@@ -5,7 +5,6 @@
 }
 
 html {
-  font-size: calc(13px + 0.390625vw);
   scroll-behavior: smooth;
 }
 
@@ -15,4 +14,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --elo7-yellow: #EBB93E;
+  --text-color-dark: #666;
+  --text-color-light: #FFF;
+  --link-color: #089F9F;
+  --background-grey: #F8F8F8;
+  --border-color: #CCC;
+  --text-shadow-color: #212121;
 }

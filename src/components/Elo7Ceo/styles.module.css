@@ -5,7 +5,7 @@
 }
 
 .ceoInfo em {
-  color: #EBB93E;
+  color: var(--elo7-yellow);
   font-weight: 600;
 }
 

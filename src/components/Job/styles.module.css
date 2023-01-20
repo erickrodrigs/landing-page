@@ -3,7 +3,7 @@
 }
 
 .jobRole {
-  color: #089F9F;
+  color: var(--link-color);
   font-weight: 700;
   text-decoration: none;
 }

@@ -4,11 +4,11 @@
   text-decoration: none;
   border: none;
   border-top: 1px solid;
-  border-color: #ccc;
+  border-color: var(--border-color);
   padding: 1rem 1rem 0 1rem;
   outline: none;
   text-transform: uppercase;
-  color: #089F9F;
+  color: var(--link-color);
   font-weight: 500;
   cursor: pointer;
 }
